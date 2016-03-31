@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/30/http:%5C/%5C/www.baidu.com/</loc>
+    
+    <lastmod>2016-04-30T07:35:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/31/20160331-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2016-03-31T02:26:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016/03/29/hello-world/</loc>
+    
+    <lastmod>2016-03-30T07:39:32.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
