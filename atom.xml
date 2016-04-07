@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-04-07T03:26:51.000Z</updated>
+  <updated>2016-04-07T05:44:17.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,23 @@
   
   <entry>
     <title>hexo博客搭建</title>
-    <link href="http://yoursite.com/2016/03/31/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2016/03/31/博客搭建/</id>
-    <published>2016-03-31T02:11:00.000Z</published>
-    <updated>2016-04-07T03:26:51.000Z</updated>
+    <link href="http://yoursite.com/2016/04/07/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2016/04/07/博客搭建/</id>
+    <published>2016-04-07T02:11:00.000Z</published>
+    <updated>2016-04-07T05:44:17.000Z</updated>
     
-    <content type="html">&lt;p&gt;花了两天时间，终于hexo搭建好了，主要时间浪费在选择&lt;a href=&quot;https://hexo.io/docs/themes.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;theme&lt;/a&gt;上，总觉得没有自己想要的。&lt;br&gt;搭建的过程相对来说还是比较顺利的，主要参考链接如下：&lt;br&gt;&lt;a href=&quot;http://zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot;&gt;Lippera’s blog&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.hjtxxx.com/2015/08/13/Hexo-一-：在GitHub上搭建静态博客/&quot; target=&quot;_blank&quot;&gt;HEYJ的技术博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://litten.github.io/2014/08/31/hexo-theme-yilia/#more&quot; target=&quot;_blank&quot;&gt;Litten&lt;/a&gt;(也是使用他的主题)&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/xljzlw/p/5137622.html?utm_source=tuicool&amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;相册功能参考地址&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;花了两天时间，终于hexo搭建好了，主要时间浪费在选择&lt;a href=&quot;https://hexo.io/docs/themes.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;theme&lt;/a&gt;上，总觉得没有自己想要的。&lt;br&gt;搭建的过程相对来说还是比较顺利的，主要参考链接如下：&lt;br&gt;&lt;a href=&quot;http://zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot;&gt;Lippera’s blog&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.hjtxxx.com/2015/08/13/Hexo-一-：在GitHub上搭建静态博客/&quot; target=&quot;_blank&quot;&gt;HEYJ的技术博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://litten.github.io/2014/08/31/hexo-theme-yilia/#more&quot; target=&quot;_blank&quot;&gt;Litten&lt;/a&gt;(也是使用他的主题)&lt;/p&gt;
+&lt;p&gt;该主题遇到两个不是很重要的小问题。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;一. 该主题点击头像和点击主页效果一样。想把点击头像显示aboutme的页面。于是新建一个about页面，然后修改themes/yilia/layout/_partial/left-col.ejs第4行为&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;a href=&amp;quot;/about/&amp;quot; class=&amp;quot;profilepic&amp;quot;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;二. 相册功能&lt;a href=&quot;https://github.com/litten/hexo-theme-yilia/wiki/同步你的instagram图片&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;instagram&lt;/a&gt;，由于instagram被禁…暂不可用，无奈得换种方法实现，找到另一种方法，&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/xljzlw/p/5137622.html?utm_source=tuicool&amp;utm_medium=referral&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo相册功能&lt;/a&gt;，该方法需要在根目录新建个photos文件夹，将文件夹里面的图片提交的github，然后通过js将图片生产output.json文件，这样本地需要保存一份，我的电脑是128gmac，空间本身就少，所以我直接将图片提交到七牛云存储，然后把链接直接写到output.json里面，然后再修改photo.js里面的图片路径，同样能实现。&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;好好学习，天天向上.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;!-- ![image](http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg) --&gt;
 &lt;p&gt;&lt;img src=&quot;http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg&quot; height=&quot;100&quot; width=&quot;100&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;花了两天时间，终于hexo搭建好了，主要时间浪费在选择&lt;a href=&quot;https://hexo.io/docs/themes.html&quot;&gt;theme&lt;/a&gt;上，总觉得没有自己想要的。&lt;br&gt;搭建的过程相对来说还是比较顺利的，主要参考链接如下：&lt;br&gt;&lt;a href=&quot;http://zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot;&gt;Lippera’s blog&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.hjtxxx.com/2015/08/13/Hexo-一-：在GitHub上搭建静态博客/&quot; target=&quot;_blank&quot;&gt;HEYJ的技术博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://litten.github.io/2014/08/31/hexo-theme-yilia/#more&quot; target=&quot;_blank&quot;&gt;Litten&lt;/a&gt;(也是使用他的主题)&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/xljzlw/p/5137622.html?utm_source=tuicool&amp;utm_medium=referral&quot;&gt;相册功能参考地址&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;好好学习，天天向上.&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;花了两天时间，终于hexo搭建好了，主要时间浪费在选择&lt;a href=&quot;https://hexo.io/docs/themes.html&quot;&gt;theme&lt;/a&gt;上，总觉得没有自己想要的。&lt;br&gt;搭建的过程相对来说还是比较顺利的，主要参考链接如下：&lt;br&gt;&lt;a href=&quot;http://zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot;&gt;Lippera’s blog&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://blog.hjtxxx.com/2015/08/13/Hexo-一-：在GitHub上搭建静态博客/&quot; target=&quot;_blank&quot;&gt;HEYJ的技术博客&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://litten.github.io/2014/08/31/hexo-theme-yilia/#more&quot; target=&quot;_blank&quot;&gt;Litten&lt;/a&gt;(也是使用他的主题)&lt;/p&gt;
+&lt;p&gt;该主题遇到两个不是很重要的小问题。&lt;br&gt;
     
     </summary>
     
