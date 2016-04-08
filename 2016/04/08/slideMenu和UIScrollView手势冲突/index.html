@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>哎呦哇</title>
+  <title>slideMenu和UIScrollView手势冲突 | 哎呦哇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="毕业于南京化工职业技术学院">
-<meta property="og:type" content="website">
-<meta property="og:title" content="哎呦哇">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="定义一个子类继承UIScrollView，重写- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer方法，做些判断就可以达达这效果。目前我只做了向右滑动，菜单在左侧的冲突，右边依此类推很容易解决。以下Menu在左侧的解决方法：">
+<meta property="og:type" content="article">
+<meta property="og:title" content="slideMenu和UIScrollView手势冲突">
+<meta property="og:url" content="http://yoursite.com/2016/04/08/slideMenu和UIScrollView手势冲突/index.html">
 <meta property="og:site_name" content="哎呦哇">
-<meta property="og:description" content="毕业于南京化工职业技术学院">
+<meta property="og:description" content="定义一个子类继承UIScrollView，重写- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer方法，做些判断就可以达达这效果。目前我只做了向右滑动，菜单在左侧的冲突，右边依此类推很容易解决。以下Menu在左侧的解决方法：">
+<meta property="og:updated_time" content="2016-04-08T09:47:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="哎呦哇">
-<meta name="twitter:description" content="毕业于南京化工职业技术学院">
+<meta name="twitter:title" content="slideMenu和UIScrollView手势冲突">
+<meta name="twitter:description" content="定义一个子类继承UIScrollView，重写- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer方法，做些判断就可以达达这效果。目前我只做了向右滑动，菜单在左侧的冲突，右边依此类推很容易解决。以下Menu在左侧的解决方法：">
   
     <link rel="alternative" href="/atom.xml" title="哎呦哇" type="application/atom+xml">
   
@@ -170,9 +171,7 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-slideMenu和UIScrollView手势冲突" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-slideMenu和UIScrollView手势冲突" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/04/08/slideMenu和UIScrollView手势冲突/" class="article-date">
@@ -188,106 +187,50 @@ var _hmt = _hmt || [];
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/08/slideMenu和UIScrollView手势冲突/">slideMenu和UIScrollView手势冲突</a>
+    <h1 class="article-title" itemprop="name">
+      slideMenu和UIScrollView手势冲突
     </h1>
   
 
       </header>
       
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>定义一个子类继承UIScrollView，重写<code>- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer</code>方法，做些判断就可以达达这效果。<br>目前我只做了向右滑动，菜单在左侧的冲突，右边依此类推很容易解决。以下Menu在左侧的解决方法：<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
 	</div>
 
-      
+        
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/App开发/">App开发</a>
 	</div>
 
 
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/08/slideMenu和UIScrollView手势冲突/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/07/博客搭建/" class="article-date">
-  	<time datetime="2016-04-07T02:11:00.000Z" itemprop="datePublished">2016-04-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/07/博客搭建/">hexo博客搭建</a>
-    </h1>
-  
-
-      </header>
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>花了两天时间，终于hexo搭建好了，主要时间浪费在选择<a href="https://hexo.io/docs/themes.html">theme</a>上，总觉得没有自己想要的。<br>搭建的过程相对来说还是比较顺利的，主要参考链接如下：<br><a href="http://zipperary.com/categories/hexo/" target="_blank">Lippera’s blog</a><br><a href="http://blog.hjtxxx.com/2015/08/13/Hexo-一-：在GitHub上搭建静态博客/" target="_blank">HEYJ的技术博客</a><br><a href="http://litten.github.io/2014/08/31/hexo-theme-yilia/#more" target="_blank">Litten</a>(也是使用他的主题)<br>
+        <p>定义一个子类继承UIScrollView，重写<code>- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer</code>方法，做些判断就可以达达这效果。<br>目前我只做了向右滑动，菜单在左侧的冲突，右边依此类推很容易解决。以下Menu在左侧的解决方法：<br><a id="more"></a><br><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)gestureRecognizerShouldBegin:(<span class="built_in">UIGestureRecognizer</span> *)gestureRecognizer &#123;</span><br><span class="line">    <span class="keyword">if</span> (![gestureRecognizer isKindOfClass:[<span class="built_in">UIPanGestureRecognizer</span> class]]) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">CGPoint</span> velocity = [(<span class="built_in">UIPanGestureRecognizer</span> *)gestureRecognizer velocityInView:<span class="keyword">self</span>];</span><br><span class="line">    <span class="keyword">if</span> (velocity.x &gt; <span class="number">0.0</span>f &amp;&amp; <span class="keyword">self</span>.contentOffset.x == <span class="number">0</span> ) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<blockquote><p><strong>不闻不问不一定是忘记了，但一定是疏远了，彼此沉默太久就连主动的都需要勇气。</strong></p>
+</blockquote>
       
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/生活/">生活</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/04/07/博客搭建/#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/07/博客搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo博客搭建</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -296,11 +239,28 @@ var _hmt = _hmt || [];
 
 
 
+<div class="duoshuo">
+  <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="slideMenu和UIScrollView手势冲突-slideMenu和UIScrollView手势冲突" data-title="slideMenu和UIScrollView手势冲突" data-url="http://yoursite.com/2016/04/08/slideMenu和UIScrollView手势冲突/"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"zhangliucheng"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- 多说公共JS代码 end -->
+</div>
 
 
 
-  
-  
+
 </div>
       <footer id="footer">
   <div class="outer">
@@ -324,8 +284,8 @@ var _hmt = _hmt || [];
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
