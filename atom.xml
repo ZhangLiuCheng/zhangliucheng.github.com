@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-30T09:31:59.000Z</updated>
+  <updated>2016-07-30T09:52:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,15 +20,18 @@
     <link href="http://yoursite.com/2016/07/30/aspectJ%E5%AD%A6%E4%B9%A0/"/>
     <id>http://yoursite.com/2016/07/30/aspectJ学习/</id>
     <published>2016-07-30T09:27:13.000Z</published>
-    <updated>2016-07-30T09:31:59.000Z</updated>
+    <updated>2016-07-30T09:52:27.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;不闻不问不一定是忘记了，但一定是疏远了，彼此沉默太久就连主动的都需要勇气。&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content>
+&lt;/blockquote&gt;
+&lt;p&gt;aop的实现我目前了解的有两种，一种是通过动态代理（实现InvocationHandler接口或者用第三方cglib库，两者区别这就不介绍了），另一种是aspectJ。&lt;br&gt;aspectJ环境，首先eclipse安装插件，&lt;a href=&quot;http://www.eclipse.org/aspectj/downloads.php&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;下载地址&lt;/a&gt;，aspect基本用法可以参考官方&lt;a href=&quot;http://www.eclipse.org/aspectj/doc/released/progguide/starting-aspectj.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;使用说明&lt;/a&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     
       &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;不闻不问不一定是忘记了，但一定是疏远了，彼此沉默太久就连主动的都需要勇气。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;p&gt;aop的实现我目前了解的有两种，一种是通过动态代理（实现InvocationHandler接口或者
     
     </summary>
     
