@@ -172,11 +172,11 @@ var _hmt = _hmt || [];
 
       <div class="body-wrap">
   
-    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-android防破解技术研究" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/07/08/笔记/" class="article-date">
-  	<time datetime="2016-07-08T05:49:02.000Z" itemprop="datePublished">2016-07-08</time>
+      <a href="/2016/05/10/android防破解技术研究/" class="article-date">
+  	<time datetime="2016-05-10T02:37:26.000Z" itemprop="datePublished">2016-05-10</time>
 </a>
     </div>
   
@@ -189,7 +189,7 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/07/08/笔记/">笔记</a>
+      <a class="article-title" href="/2016/05/10/android防破解技术研究/">android防破解技术研究</a>
     </h1>
   
 
@@ -198,9 +198,17 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.mvc mvp mvvm    (<a href="http://www.tuicool.com/articles/FrAJ3qv" target="_blank" rel="external">http://www.tuicool.com/articles/FrAJ3qv</a>)</p>
-<p>2.DataBinding    (<a href="http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;mid=405212572&amp;idx=1&amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;scene=21#wechat_redirect" target="_blank" rel="external">http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;mid=405212572&amp;idx=1&amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;scene=21#wechat_redirect</a>)</p>
-<p>3.RACSubject</p>
+        <p><a href="http://www.androidchina.net/4187.html" target="_blank" rel="external">http://www.androidchina.net/4187.html</a></p>
+<p><a href="http://m.blog.csdn.net/article/details?id=51927631" target="_blank" rel="external">http://m.blog.csdn.net/article/details?id=51927631</a></p>
+<p><a href="http://blog.csdn.net/hui12581/article/details/44832651" target="_blank" rel="external">http://blog.csdn.net/hui12581/article/details/44832651</a>  JNI详解—从不懂到理解</p>
+<p>工具介绍：<br>apktool<br>     作用：资源文件获取，可以提取出图片文件和布局文件进行使用查看<br>dex2jar<br>     作用：将apk反编译成java源码（classes.dex转化成jar文件）<br>jd-gui<br>     作用：查看APK中classes.dex转化成出的jar文件，即源码文件</p>
+<p>反编译apk<br>apktool d -f app-release.apk -o app-release1</p>
+<p>重新打包apk(打包好的apk放在app-release1／dist目录里面）<br>apktool b app-release1</p>
+<p>这时候直接安装app-release1／dist里的apk会出现下面错误,所有需要重新签名<br>[INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION]</p>
+<p>生成keystore<br>$ keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 </p>
+<p>重新签名<br>$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore my_application.apk alias_name<br>多次签名会出现多个Signature,把多次签名后的apk重新反编译打开就清楚了app-release2／original／META-INF／(可以不用理会这句话)</p>
+<p>查看apk代码<br>将要反编译的APK后缀名改为.rar或则 .zip，并解压，得到其中的额classes.dex文件，将获取到的classes.dex放到之前解压出来的工具dex2jar-0.0.9.15 文件夹内。<br>./dex2jar.sh classes.dex</p>
+<p>mac下查看.so里面的函数列表<br>nm -D XXX.so</p>
 
       
     </div>
@@ -618,6 +626,61 @@ var _hmt = _hmt || [];
         <p class="article-more-link">
           <a  href="/2016/04/03/aspectJ面向切面编程/#more">阅读全文 >></a>
         </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/01/笔记/" class="article-date">
+  	<time datetime="2016-04-01T05:49:02.000Z" itemprop="datePublished">2016-04-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/01/笔记/">笔记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.mvc mvp mvvm    (<a href="http://www.tuicool.com/articles/FrAJ3qv" target="_blank" rel="external">http://www.tuicool.com/articles/FrAJ3qv</a>)</p>
+<p>2.DataBinding    (<a href="http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;mid=405212572&amp;idx=1&amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;scene=21#wechat_redirect" target="_blank" rel="external">http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;mid=405212572&amp;idx=1&amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;scene=21#wechat_redirect</a>)</p>
+<p>3.RACSubject</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
       
       <div class="clearfix"></div>
     </div>

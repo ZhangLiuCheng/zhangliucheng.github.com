@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-07-08T05:51:36.000Z</updated>
+  <updated>2016-08-17T02:39:50.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,20 +16,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>笔记</title>
-    <link href="http://yoursite.com/2016/07/08/%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/07/08/笔记/</id>
-    <published>2016-07-08T05:49:02.000Z</published>
-    <updated>2016-07-08T05:51:36.000Z</updated>
+    <title>android防破解技术研究</title>
+    <link href="http://yoursite.com/2016/05/10/android%E9%98%B2%E7%A0%B4%E8%A7%A3%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+    <id>http://yoursite.com/2016/05/10/android防破解技术研究/</id>
+    <published>2016-05-10T02:37:26.000Z</published>
+    <updated>2016-08-17T02:39:50.000Z</updated>
     
-    <content type="html">&lt;p&gt;1.mvc mvp mvvm    (&lt;a href=&quot;http://www.tuicool.com/articles/FrAJ3qv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/FrAJ3qv&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;2.DataBinding    (&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;amp;mid=405212572&amp;amp;idx=1&amp;amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;amp;scene=21#wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;amp;mid=405212572&amp;amp;idx=1&amp;amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;amp;scene=21#wechat_redirect&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;3.RACSubject&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.androidchina.net/4187.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.androidchina.net/4187.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://m.blog.csdn.net/article/details?id=51927631&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://m.blog.csdn.net/article/details?id=51927631&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://blog.csdn.net/hui12581/article/details/44832651&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/hui12581/article/details/44832651&lt;/a&gt;  JNI详解—从不懂到理解&lt;/p&gt;
+&lt;p&gt;工具介绍：&lt;br&gt;apktool&lt;br&gt;     作用：资源文件获取，可以提取出图片文件和布局文件进行使用查看&lt;br&gt;dex2jar&lt;br&gt;     作用：将apk反编译成java源码（classes.dex转化成jar文件）&lt;br&gt;jd-gui&lt;br&gt;     作用：查看APK中classes.dex转化成出的jar文件，即源码文件&lt;/p&gt;
+&lt;p&gt;反编译apk&lt;br&gt;apktool d -f app-release.apk -o app-release1&lt;/p&gt;
+&lt;p&gt;重新打包apk(打包好的apk放在app-release1／dist目录里面）&lt;br&gt;apktool b app-release1&lt;/p&gt;
+&lt;p&gt;这时候直接安装app-release1／dist里的apk会出现下面错误,所有需要重新签名&lt;br&gt;[INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION]&lt;/p&gt;
+&lt;p&gt;生成keystore&lt;br&gt;$ keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 &lt;/p&gt;
+&lt;p&gt;重新签名&lt;br&gt;$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore my_application.apk alias_name&lt;br&gt;多次签名会出现多个Signature,把多次签名后的apk重新反编译打开就清楚了app-release2／original／META-INF／(可以不用理会这句话)&lt;/p&gt;
+&lt;p&gt;查看apk代码&lt;br&gt;将要反编译的APK后缀名改为.rar或则 .zip，并解压，得到其中的额classes.dex文件，将获取到的classes.dex放到之前解压出来的工具dex2jar-0.0.9.15 文件夹内。&lt;br&gt;./dex2jar.sh classes.dex&lt;/p&gt;
+&lt;p&gt;mac下查看.so里面的函数列表&lt;br&gt;nm -D XXX.so&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;1.mvc mvp mvvm    (&lt;a href=&quot;http://www.tuicool.com/articles/FrAJ3qv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/FrAJ3
+      &lt;p&gt;&lt;a href=&quot;http://www.androidchina.net/4187.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.androidchina.net/4187.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;
     
     </summary>
     
@@ -261,6 +270,27 @@
     
     
       <category term="aop" scheme="http://yoursite.com/tags/aop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>笔记</title>
+    <link href="http://yoursite.com/2016/04/01/%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/04/01/笔记/</id>
+    <published>2016-04-01T05:49:02.000Z</published>
+    <updated>2016-08-17T02:38:25.000Z</updated>
+    
+    <content type="html">&lt;p&gt;1.mvc mvp mvvm    (&lt;a href=&quot;http://www.tuicool.com/articles/FrAJ3qv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/FrAJ3qv&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;2.DataBinding    (&lt;a href=&quot;http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;amp;mid=405212572&amp;amp;idx=1&amp;amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;amp;scene=21#wechat_redirect&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://mp.weixin.qq.com/s?__biz=MjM5NDkxMTgyNw==&amp;amp;mid=405212572&amp;amp;idx=1&amp;amp;sn=e2a84186dccc7661e0644feb38d74f8c&amp;amp;scene=21#wechat_redirect&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;3.RACSubject&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1.mvc mvp mvvm    (&lt;a href=&quot;http://www.tuicool.com/articles/FrAJ3qv&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.tuicool.com/articles/FrAJ3
+    
+    </summary>
+    
     
   </entry>
   

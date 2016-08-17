@@ -4,17 +4,27 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Archives: 2016/7 | 哎呦哇</title>
+  <title>android防破解技术研究 | 哎呦哇</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="毕业于南京化工职业技术学院">
-<meta property="og:type" content="website">
-<meta property="og:title" content="哎呦哇">
-<meta property="og:url" content="http://yoursite.com/archives/2016/07/index.html">
+  <meta name="description" content="http://www.androidchina.net/4187.html
+http://m.blog.csdn.net/article/details?id=51927631
+http://blog.csdn.net/hui12581/article/details/44832651  JNI详解—从不懂到理解
+工具介绍：apktool     作用：资源文件获取，可以提取出图片文件和布局文件进">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android防破解技术研究">
+<meta property="og:url" content="http://yoursite.com/2016/05/10/android防破解技术研究/index.html">
 <meta property="og:site_name" content="哎呦哇">
-<meta property="og:description" content="毕业于南京化工职业技术学院">
+<meta property="og:description" content="http://www.androidchina.net/4187.html
+http://m.blog.csdn.net/article/details?id=51927631
+http://blog.csdn.net/hui12581/article/details/44832651  JNI详解—从不懂到理解
+工具介绍：apktool     作用：资源文件获取，可以提取出图片文件和布局文件进">
+<meta property="og:updated_time" content="2016-08-17T02:39:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="哎呦哇">
-<meta name="twitter:description" content="毕业于南京化工职业技术学院">
+<meta name="twitter:title" content="android防破解技术研究">
+<meta name="twitter:description" content="http://www.androidchina.net/4187.html
+http://m.blog.csdn.net/article/details?id=51927631
+http://blog.csdn.net/hui12581/article/details/44832651  JNI详解—从不懂到理解
+工具介绍：apktool     作用：资源文件获取，可以提取出图片文件和布局文件进">
   
     <link rel="alternative" href="/atom.xml" title="哎呦哇" type="application/atom+xml">
   
@@ -170,49 +180,96 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
 
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-android防破解技术研究" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/07/08/笔记/" class="archive-article-date">
-  	<time datetime="2016-07-08T05:49:02.000Z" itemprop="datePublished">Jul 8</time>
+    <div class="article-meta">
+      <a href="/2016/05/10/android防破解技术研究/" class="article-date">
+  	<time datetime="2016-05-10T02:37:26.000Z" itemprop="datePublished">2016-05-10</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/08/笔记/">笔记</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      android防破解技术研究
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://www.androidchina.net/4187.html" target="_blank" rel="external">http://www.androidchina.net/4187.html</a></p>
+<p><a href="http://m.blog.csdn.net/article/details?id=51927631" target="_blank" rel="external">http://m.blog.csdn.net/article/details?id=51927631</a></p>
+<p><a href="http://blog.csdn.net/hui12581/article/details/44832651" target="_blank" rel="external">http://blog.csdn.net/hui12581/article/details/44832651</a>  JNI详解—从不懂到理解</p>
+<p>工具介绍：<br>apktool<br>     作用：资源文件获取，可以提取出图片文件和布局文件进行使用查看<br>dex2jar<br>     作用：将apk反编译成java源码（classes.dex转化成jar文件）<br>jd-gui<br>     作用：查看APK中classes.dex转化成出的jar文件，即源码文件</p>
+<p>反编译apk<br>apktool d -f app-release.apk -o app-release1</p>
+<p>重新打包apk(打包好的apk放在app-release1／dist目录里面）<br>apktool b app-release1</p>
+<p>这时候直接安装app-release1／dist里的apk会出现下面错误,所有需要重新签名<br>[INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION]</p>
+<p>生成keystore<br>$ keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000 </p>
+<p>重新签名<br>$ jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore my_application.apk alias_name<br>多次签名会出现多个Signature,把多次签名后的apk重新反编译打开就清楚了app-release2／original／META-INF／(可以不用理会这句话)</p>
+<p>查看apk代码<br>将要反编译的APK后缀名改为.rar或则 .zip，并解压，得到其中的额classes.dex文件，将获取到的classes.dex放到之前解压出来的工具dex2jar-0.0.9.15 文件夹内。<br>./dex2jar.sh classes.dex</p>
+<p>mac下查看.so里面的函数列表<br>nm -D XXX.so</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/01/Android通信篇EventBus/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Android通信篇EventBus</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+
+
+<div class="duoshuo">
+  <!-- 多说评论框 start -->
+  <div class="ds-thread" data-thread-key="android防破解技术研究-android防破解技术研究" data-title="android防破解技术研究" data-url="http://yoursite.com/2016/05/10/android防破解技术研究/"></div>
+  <!-- 多说评论框 end -->
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+  <script type="text/javascript">
+  var duoshuoQuery = {short_name:"zhangliucheng"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0] 
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+  <!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -238,8 +295,8 @@ var _hmt = _hmt || [];
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
