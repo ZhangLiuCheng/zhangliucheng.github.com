@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-08-21T14:07:14.000Z</updated>
+  <updated>2016-08-29T07:46:25.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AndroidProcessor处理流程</title>
+    <link href="http://yoursite.com/2016/05/18/AndroidProcessor%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B/"/>
+    <id>http://yoursite.com/2016/05/18/AndroidProcessor处理流程/</id>
+    <published>2016-05-18T07:38:09.000Z</published>
+    <updated>2016-08-29T07:46:25.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;人生如果错了方向，停止就是进步。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;过程等有时间在来补充…&quot;&gt;&lt;a href=&quot;#过程等有时间在来补充…&quot; class=&quot;headerlink&quot; title=&quot;过程等有时间在来补充…&quot;&gt;&lt;/a&gt;过程等有时间在来补充…&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ZhangLiuCheng/AndroidProcessorDemo&quot; target=&quot;_blank&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;参考：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://hannesdorfmann.com/annotation-processing/annotationprocessing101&quot; target=&quot;_blank&quot;&gt;HANNES DORFMANN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/charon_chui/article/details/51896830&quot; target=&quot;_blank&quot;&gt;CharonChui&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;人生如果错了方向，停止就是进步。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;过程等有时间在来补充…&quot;&gt;&lt;a href=&quot;#过程等有时间在来补充…&quot; class=&quot;headerlink&quot; title=&quot;过程等
+    
+    </summary>
+    
+      <category term="App开发" scheme="http://yoursite.com/categories/App%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="AbstractProcessor" scheme="http://yoursite.com/tags/AbstractProcessor/"/>
+    
+  </entry>
   
   <entry>
     <title>android防破解技术研究</title>
@@ -301,7 +333,7 @@
     <link href="http://yoursite.com/2016/04/01/%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/04/01/笔记/</id>
     <published>2016-04-01T05:49:02.000Z</published>
-    <updated>2016-08-24T11:01:45.000Z</updated>
+    <updated>2016-08-29T07:48:50.000Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;vpnService防火墙 &lt;a href=&quot;https://github.com/M66B/NetGuard&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/M66B/NetGuard&lt;/a&gt;&lt;/li&gt;
@@ -329,7 +361,9 @@ https://github.com/anthonycr/Grant
 https://github.com/hotchemi/PermissionsDispatcher
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
+&lt;h3 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;* IBM 技术分享http://www.ibm.com/developerworks/cn/java/j-lo-proxy1/
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;android&quot;&gt;&lt;a href=&quot;#android&quot; class=&quot;headerlink&quot; title=&quot;android&quot;&gt;&lt;/a&gt;android&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;* http://hannesdorfmann.com/annotation-processing/annotationprocessing101
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
