@@ -48,11 +48,11 @@
   </entry>
   
   <entry>
-    <title>android防破解技术研究</title>
-    <link href="http://yoursite.com/2016/05/10/android%E9%98%B2%E7%A0%B4%E8%A7%A3%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
-    <id>http://yoursite.com/2016/05/10/android防破解技术研究/</id>
+    <title>Android防破解技术研究</title>
+    <link href="http://yoursite.com/2016/05/10/Android%E9%98%B2%E7%A0%B4%E8%A7%A3%E6%8A%80%E6%9C%AF%E7%A0%94%E7%A9%B6/"/>
+    <id>http://yoursite.com/2016/05/10/Android防破解技术研究/</id>
     <published>2016-05-10T02:37:26.000Z</published>
-    <updated>2016-08-21T14:07:14.000Z</updated>
+    <updated>2016-08-31T09:01:56.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;人生如果错了方向，停止就是进步。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -329,11 +329,107 @@
   </entry>
   
   <entry>
+    <title>Android—CoordinatorLayout用法</title>
+    <link href="http://yoursite.com/2016/03/01/Android%E2%80%94CoordinatorLayout%E7%94%A8%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/03/01/Android—CoordinatorLayout用法/</id>
+    <published>2016-03-01T09:05:22.000Z</published>
+    <updated>2016-08-31T09:28:53.000Z</updated>
+    
+    <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;人生一条路，走自己的路，&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;人生两个好，身体好，心情好&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;好好珍惜每一天！&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;&amp;quot;http://7xsp4m.com1.z0.glb.clouddn.com/Android-CoordinatorLayout.gif&amp;quot;&quot; alt=&quot;&amp;quot;图片描述&amp;quot;&quot;&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;?xml version=”1.0” encoding=”utf-8”?&amp;gt;&lt;/p&gt;
+&lt;android.support.design.widget.coordinatorlayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot; xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot; xmlns:tools=&quot;http://schemas.android.com/tools&quot; android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot; android:fitssystemwindows=&quot;true&quot; tools:context=&quot;com.innotect.coordinatorlayoutdemo.ScrollingActivity&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;android.support.design.widget.AppBarLayout
+    android:id=&amp;quot;@+id/appbar&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;wrap_content&amp;quot;
+    android:theme=&amp;quot;@style/AppTheme.AppBarOverlay&amp;quot;&amp;gt;
+
+    &amp;lt;android.support.v7.widget.Toolbar
+        android:id=&amp;quot;@+id/toolbar&amp;quot;
+        app:layout_scrollFlags=&amp;quot;scroll|enterAlways&amp;quot;
+        android:layout_width=&amp;quot;match_parent&amp;quot;
+        android:layout_height=&amp;quot;?attr/actionBarSize&amp;quot;
+        app:title=&amp;quot;与Scrollview&amp;quot; /&amp;gt;
+&amp;lt;/android.support.design.widget.AppBarLayout&amp;gt;
+
+
+&amp;lt;android.support.v4.widget.NestedScrollView
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;match_parent&amp;quot;
+    app:layout_behavior=&amp;quot;@string/appbar_scrolling_view_behavior&amp;quot;&amp;gt;
+
+    &amp;lt;TextView
+        android:layout_width=&amp;quot;wrap_content&amp;quot;
+        android:layout_height=&amp;quot;wrap_content&amp;quot;
+        android:layout_margin=&amp;quot;@dimen/text_margin&amp;quot;
+        android:text=&amp;quot;@string/large_text&amp;quot; /&amp;gt;
+
+&amp;lt;/android.support.v4.widget.NestedScrollView&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/p&gt;&lt;/android.support.design.widget.coordinatorlayout&gt;&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
+&lt;h3 id=&quot;2&quot;&gt;&lt;a href=&quot;#2&quot; class=&quot;headerlink&quot; title=&quot;2.&quot;&gt;&lt;/a&gt;2.&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/ZhangLiuCheng/CoordinatorLayoutDemo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;人生一条路，走自己的路，&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;人生两个好，身体好，心情好&lt;/strong&gt;&lt;br&gt;&lt;strong&gt;好好珍惜每一天！&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot; title=&quot;1.&quot;&gt;&lt;/a&gt;1.&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;&amp;quot;http://7xsp4m.com1.z0.glb.clouddn.com/Android-CoordinatorLayout.gif&amp;quot;&quot; alt=&quot;&amp;quot;图片描述&amp;quot;&quot;&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&amp;lt;?xml version=”1.0” encoding=”utf-8”?&amp;gt;&lt;/p&gt;
+&lt;android.support.design.widget.CoordinatorLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    xmlns:app=&quot;http://schemas.android.com/apk/res-auto&quot;
+    xmlns:tools=&quot;http://schemas.android.com/tools&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    android:fitsSystemWindows=&quot;true&quot;
+    tools:context=&quot;com.innotect.coordinatorlayoutdemo.ScrollingActivity&quot;&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;android.support.design.widget.AppBarLayout
+    android:id=&amp;quot;@+id/appbar&amp;quot;
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;wrap_content&amp;quot;
+    android:theme=&amp;quot;@style/AppTheme.AppBarOverlay&amp;quot;&amp;gt;
+
+    &amp;lt;android.support.v7.widget.Toolbar
+        android:id=&amp;quot;@+id/toolbar&amp;quot;
+        app:layout_scrollFlags=&amp;quot;scroll|enterAlways&amp;quot;
+        android:layout_width=&amp;quot;match_parent&amp;quot;
+        android:layout_height=&amp;quot;?attr/actionBarSize&amp;quot;
+        app:title=&amp;quot;与Scrollview&amp;quot; /&amp;gt;
+&amp;lt;/android.support.design.widget.AppBarLayout&amp;gt;
+
+
+&amp;lt;android.support.v4.widget.NestedScrollView
+    android:layout_width=&amp;quot;match_parent&amp;quot;
+    android:layout_height=&amp;quot;match_parent&amp;quot;
+    app:layout_behavior=&amp;quot;@string/appbar_scrolling_view_behavior&amp;quot;&amp;gt;
+
+    &amp;lt;TextView
+        android:layout_width=&amp;quot;wrap_content&amp;quot;
+        android:layout_height=&amp;quot;wrap_content&amp;quot;
+        android:layout_margin=&amp;quot;@dimen/text_margin&amp;quot;
+        android:text=&amp;quot;@string/large_text&amp;quot; /&amp;gt;
+
+&amp;lt;/android.support.v4.widget.NestedScrollView&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;/android.support.design.widget.CoordinatorLayout&gt;&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="App开发" scheme="http://yoursite.com/categories/App%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="CoordinatorLayout" scheme="http://yoursite.com/tags/CoordinatorLayout/"/>
+    
+  </entry>
+  
+  <entry>
     <title>笔记</title>
-    <link href="http://yoursite.com/2016/04/01/%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2016/04/01/笔记/</id>
-    <published>2016-04-01T05:49:02.000Z</published>
-    <updated>2016-08-29T07:48:50.000Z</updated>
+    <link href="http://yoursite.com/2016/02/20/%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/02/20/笔记/</id>
+    <published>2016-02-20T05:49:02.000Z</published>
+    <updated>2016-08-31T09:03:53.000Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;vpnService防火墙 &lt;a href=&quot;https://github.com/M66B/NetGuard&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/M66B/NetGuard&lt;/a&gt;&lt;/li&gt;
@@ -378,10 +474,10 @@ https://github.com/hotchemi/PermissionsDispatcher
   
   <entry>
     <title>hexo博客搭建</title>
-    <link href="http://yoursite.com/2016/03/31/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2016/03/31/博客搭建/</id>
-    <published>2016-03-31T12:11:00.000Z</published>
-    <updated>2016-07-30T09:30:31.000Z</updated>
+    <link href="http://yoursite.com/2016/02/18/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2016/02/18/博客搭建/</id>
+    <published>2016-02-18T12:11:00.000Z</published>
+    <updated>2016-08-31T09:03:22.000Z</updated>
     
     <content type="html">&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;笑一个吧，没人会爱上你的愁眉苦脸。&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;

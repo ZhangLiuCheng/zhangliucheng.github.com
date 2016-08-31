@@ -112,7 +112,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/AbstractProcessor/" style="font-size: 10px;">AbstractProcessor</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/android/" style="font-size: 20px;">android</a> <a href="/tags/aop/" style="font-size: 10px;">aop</a> <a href="/tags/ios/" style="font-size: 20px;">ios</a> <a href="/tags/javapoet/" style="font-size: 10px;">javapoet</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/rxJava/" style="font-size: 10px;">rxJava</a> <a href="/tags/录制小视频/" style="font-size: 10px;">录制小视频</a>
+						<a href="/tags/AbstractProcessor/" style="font-size: 10px;">AbstractProcessor</a> <a href="/tags/CoordinatorLayout/" style="font-size: 10px;">CoordinatorLayout</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/android/" style="font-size: 20px;">android</a> <a href="/tags/aop/" style="font-size: 10px;">aop</a> <a href="/tags/ios/" style="font-size: 20px;">ios</a> <a href="/tags/javapoet/" style="font-size: 10px;">javapoet</a> <a href="/tags/ndk/" style="font-size: 10px;">ndk</a> <a href="/tags/rxJava/" style="font-size: 10px;">rxJava</a> <a href="/tags/录制小视频/" style="font-size: 10px;">录制小视频</a>
 					</div>
 				</section>
 				
@@ -240,10 +240,10 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-android防破解技术研究" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Android防破解技术研究" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/10/android防破解技术研究/" class="article-date">
+      <a href="/2016/05/10/Android防破解技术研究/" class="article-date">
   	<time datetime="2016-05-10T02:37:26.000Z" itemprop="datePublished">2016-05-10</time>
 </a>
     </div>
@@ -257,7 +257,7 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/10/android防破解技术研究/">android防破解技术研究</a>
+      <a class="article-title" href="/2016/05/10/Android防破解技术研究/">Android防破解技术研究</a>
     </h1>
   
 
@@ -289,7 +289,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a  href="/2016/05/10/android防破解技术研究/#more">阅读全文 >></a>
+          <a  href="/2016/05/10/Android防破解技术研究/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -716,11 +716,11 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Android—CoordinatorLayout用法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/04/01/笔记/" class="article-date">
-  	<time datetime="2016-04-01T05:49:02.000Z" itemprop="datePublished">2016-04-01</time>
+      <a href="/2016/03/01/Android—CoordinatorLayout用法/" class="article-date">
+  	<time datetime="2016-03-01T09:05:22.000Z" itemprop="datePublished">2016-03-01</time>
 </a>
     </div>
   
@@ -733,7 +733,110 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/01/笔记/">笔记</a>
+      <a class="article-title" href="/2016/03/01/Android—CoordinatorLayout用法/">Android—CoordinatorLayout用法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote><p><strong>人生一条路，走自己的路，</strong><br><strong>人生两个好，身体好，心情好</strong><br><strong>好好珍惜每一天！</strong></p>
+<h3 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h3><p><img src="&quot;http://7xsp4m.com1.z0.glb.clouddn.com/Android-CoordinatorLayout.gif&quot;" alt="&quot;图片描述&quot;">  </p>
+</blockquote>
+<p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.innotect.coordinatorlayoutdemo.ScrollingActivity">
+
+<pre><code>&lt;android.support.design.widget.AppBarLayout
+    android:id=&quot;@+id/appbar&quot;
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;wrap_content&quot;
+    android:theme=&quot;@style/AppTheme.AppBarOverlay&quot;&gt;
+
+    &lt;android.support.v7.widget.Toolbar
+        android:id=&quot;@+id/toolbar&quot;
+        app:layout_scrollFlags=&quot;scroll|enterAlways&quot;
+        android:layout_width=&quot;match_parent&quot;
+        android:layout_height=&quot;?attr/actionBarSize&quot;
+        app:title=&quot;与Scrollview&quot; /&gt;
+&lt;/android.support.design.widget.AppBarLayout&gt;
+
+
+&lt;android.support.v4.widget.NestedScrollView
+    android:layout_width=&quot;match_parent&quot;
+    android:layout_height=&quot;match_parent&quot;
+    app:layout_behavior=&quot;@string/appbar_scrolling_view_behavior&quot;&gt;
+
+    &lt;TextView
+        android:layout_width=&quot;wrap_content&quot;
+        android:layout_height=&quot;wrap_content&quot;
+        android:layout_margin=&quot;@dimen/text_margin&quot;
+        android:text=&quot;@string/large_text&quot; /&gt;
+
+&lt;/android.support.v4.widget.NestedScrollView&gt;
+</code></pre><p></android.support.design.widget.CoordinatorLayout><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><br>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CoordinatorLayout/">CoordinatorLayout</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/App开发/">App开发</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/01/Android—CoordinatorLayout用法/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/02/20/笔记/" class="article-date">
+  	<time datetime="2016-02-20T05:49:02.000Z" itemprop="datePublished">2016-02-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/02/20/笔记/">笔记</a>
     </h1>
   
 
@@ -799,8 +902,8 @@ https://github.com/hotchemi/PermissionsDispatcher
     <article id="post-博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/03/31/博客搭建/" class="article-date">
-  	<time datetime="2016-03-31T12:11:00.000Z" itemprop="datePublished">2016-03-31</time>
+      <a href="/2016/02/18/博客搭建/" class="article-date">
+  	<time datetime="2016-02-18T12:11:00.000Z" itemprop="datePublished">2016-02-18</time>
 </a>
     </div>
   
@@ -813,7 +916,7 @@ https://github.com/hotchemi/PermissionsDispatcher
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/31/博客搭建/">hexo博客搭建</a>
+      <a class="article-title" href="/2016/02/18/博客搭建/">hexo博客搭建</a>
     </h1>
   
 
@@ -843,7 +946,7 @@ https://github.com/hotchemi/PermissionsDispatcher
 
       
         <p class="article-more-link">
-          <a  href="/2016/03/31/博客搭建/#more">阅读全文 >></a>
+          <a  href="/2016/02/18/博客搭建/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
