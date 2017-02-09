@@ -333,7 +333,7 @@
     <link href="http://yoursite.com/2016/02/20/%E7%AC%94%E8%AE%B0/"/>
     <id>http://yoursite.com/2016/02/20/笔记/</id>
     <published>2016-02-20T05:49:02.000Z</published>
-    <updated>2016-08-31T09:03:53.000Z</updated>
+    <updated>2016-09-23T05:30:26.000Z</updated>
     
     <content type="html">&lt;ul&gt;
 &lt;li&gt;vpnService防火墙 &lt;a href=&quot;https://github.com/M66B/NetGuard&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/M66B/NetGuard&lt;/a&gt;&lt;/li&gt;
@@ -363,6 +363,7 @@ https://github.com/hotchemi/PermissionsDispatcher
 &lt;/ul&gt;
 &lt;h3 id=&quot;java&quot;&gt;&lt;a href=&quot;#java&quot; class=&quot;headerlink&quot; title=&quot;java&quot;&gt;&lt;/a&gt;java&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;* IBM 技术分享http://www.ibm.com/developerworks/cn/java/j-lo-proxy1/
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&quot;android&quot;&gt;&lt;a href=&quot;#android&quot; class=&quot;headerlink&quot; title=&quot;android&quot;&gt;&lt;/a&gt;android&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;* http://hannesdorfmann.com/annotation-processing/annotationprocessing101
+* http://alighters.com/blog/2016/05/02/rxjava-plus-retrofitshi-xian-wang-luo-dai-li/  token失效处理
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
